@@ -6,10 +6,12 @@
           <b-col cols="12" class="main-bg">
             <b-row>
               <b-col cols="12" lg="6" md="6">
-                <img src="@/assets/logoSales.png" class="mainLogo" />
-                <p class="textBlue">Simple.</p>
-                <p class="textBlue">Scalable.</p>
-                <p class="textBlue">Affordable.</p>
+                <vue-aos animation-class="fadeIn animated">
+                  <img src="@/assets/logoSales.png" class="mainLogo" />
+                  <p class="textBlue">Simple.</p>
+                  <p class="textBlue">Scalable.</p>
+                  <p class="textBlue">Affordable.</p>
+                </vue-aos>
               </b-col>
               <b-col cols="12" lg="6" md="6" class="contentMobile">
                 <img src="@/assets/logoMobile.png" alt="" class="logoMobile" />
@@ -156,6 +158,7 @@
 </template>
 
 <script>
+import VueAos from 'vue-aos'
 export default {
   data() {
     return {
@@ -163,7 +166,8 @@ export default {
         backgroundImage: `url(${require('@/assets/mainBg.png')})`
       }
     }
-  }
+  },
+  components: { VueAos }
 }
 </script>
 
