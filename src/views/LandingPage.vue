@@ -5,15 +5,26 @@
         <div class="main" :style="mainBG">
           <b-col cols="12" class="main-bg">
             <b-row>
-              <b-col cols="12" lg="6" md="6">
-                <vue-aos animation-class="fadeIn animated">
-                  <img src="@/assets/logoSales.png" class="mainLogo" />
-                  <p class="textBlue">Simple.</p>
-                  <p class="textBlue">Scalable.</p>
-                  <p class="textBlue">Affordable.</p>
-                </vue-aos>
+              <b-col
+                cols="12"
+                lg="6"
+                md="6"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
+                <img src="@/assets/logoSales.png" class="mainLogo" />
+                <p class="textBlue">Simple.</p>
+                <p class="textBlue">Scalable.</p>
+                <p class="textBlue">Affordable.</p>
               </b-col>
-              <b-col cols="12" lg="6" md="6" class="contentMobile">
+              <b-col
+                cols="12"
+                lg="6"
+                md="6"
+                class="contentMobile"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              >
                 <img src="@/assets/logoMobile.png" alt="" class="logoMobile" />
                 <p class="textNow">Get Early access NOW!</p>
                 <router-link to="/register" class="btn-regis">
@@ -27,7 +38,7 @@
         </div>
       </b-row>
       <b-row class="sectionTwo">
-        <b-col cols="12">
+        <b-col cols="12" data-aos="fade-down" data-aos-duration="1000">
           <p>
             Dari pembuat Salesmart. <br />
             <span
@@ -50,7 +61,11 @@
         <b-col cols="12" md="10" sm="10">
           <b-row>
             <b-col cols="12">
-              <b-row class="detailFitur">
+              <b-row
+                class="detailFitur"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 <b-col cols="3">
                   <img
                     src="@/assets/logoAbsensi.png"
@@ -66,7 +81,11 @@
                   </p>
                 </b-col>
               </b-row>
-              <b-row class="detailFitur">
+              <b-row
+                class="detailFitur"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 <b-col cols="3">
                   <img
                     src="@/assets/logoPengaturan.png"
@@ -83,7 +102,11 @@
                   </p>
                 </b-col>
               </b-row>
-              <b-row class="detailFitur">
+              <b-row
+                class="detailFitur"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 <b-col cols="3">
                   <img src="@/assets/logoCuti.png" alt="" class="logoFitur" />
                 </b-col>
@@ -95,7 +118,11 @@
                   </p>
                 </b-col>
               </b-row>
-              <b-row class="detailFitur">
+              <b-row
+                class="detailFitur"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 <b-col cols="3">
                   <img
                     src="@/assets/logoReimburse.png"
@@ -112,7 +139,11 @@
                   </p>
                 </b-col>
               </b-row>
-              <b-row class="detailFitur">
+              <b-row
+                class="detailFitur"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 <b-col cols="3">
                   <img
                     src="@/assets/logoLaporan.png"
@@ -143,7 +174,8 @@
       <b-row class="sectionContact">
         <b-col cols="12 text-center">
           <h2 class="text-center">Kontak Kami</h2>
-          <img src="@/assets/map.png" alt="" srcset="" class="mb-4 imgClient" />
+          <!-- <img src="@/assets/map.png" alt="" srcset="" class="mb-4 imgClient" /> -->
+          <div id="map"></div>
           <p>Ruko Corner Stone</p>
           <p>Jl.Muara Karang No 18 A</p>
           <p>Pluit - Jakarta Utara DKI Jakarta 14450</p>
@@ -158,7 +190,6 @@
 </template>
 
 <script>
-import VueAos from 'vue-aos'
 export default {
   data() {
     return {
@@ -166,8 +197,7 @@ export default {
         backgroundImage: `url(${require('@/assets/mainBg.png')})`
       }
     }
-  },
-  components: { VueAos }
+  }
 }
 </script>
 
