@@ -31,5 +31,10 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "globals": {
+      "window": true
+    }
   }
 }

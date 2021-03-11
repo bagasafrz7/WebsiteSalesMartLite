@@ -5,26 +5,13 @@
         <div class="main" :style="mainBG">
           <b-col cols="12" class="main-bg">
             <b-row>
-              <b-col
-                cols="12"
-                lg="6"
-                md="6"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-              >
+              <b-col cols="12" lg="6" md="6">
                 <img src="@/assets/logoSales.png" class="mainLogo" />
                 <p class="textBlue">Simple.</p>
                 <p class="textBlue">Scalable.</p>
                 <p class="textBlue">Affordable.</p>
               </b-col>
-              <b-col
-                cols="12"
-                lg="6"
-                md="6"
-                class="contentMobile"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-              >
+              <b-col cols="12" lg="6" md="6" class="contentMobile">
                 <img src="@/assets/logoMobile.png" alt="" class="logoMobile" />
                 <p class="textNow">Get Early access NOW!</p>
                 <router-link to="/register" class="btn-regis">
@@ -38,7 +25,7 @@
         </div>
       </b-row>
       <b-row class="sectionTwo">
-        <b-col cols="12" data-aos="fade-down" data-aos-duration="1000">
+        <b-col cols="12">
           <p>
             Dari pembuat Salesmart. <br />
             <span
@@ -61,11 +48,7 @@
         <b-col cols="12" md="10" sm="10">
           <b-row>
             <b-col cols="12">
-              <b-row
-                class="detailFitur"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >
+              <b-row class="detailFitur">
                 <b-col cols="3">
                   <img
                     src="@/assets/logoAbsensi.png"
@@ -81,11 +64,7 @@
                   </p>
                 </b-col>
               </b-row>
-              <b-row
-                class="detailFitur"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >
+              <b-row class="detailFitur">
                 <b-col cols="3">
                   <img
                     src="@/assets/logoPengaturan.png"
@@ -102,11 +81,7 @@
                   </p>
                 </b-col>
               </b-row>
-              <b-row
-                class="detailFitur"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >
+              <b-row class="detailFitur">
                 <b-col cols="3">
                   <img src="@/assets/logoCuti.png" alt="" class="logoFitur" />
                 </b-col>
@@ -118,11 +93,7 @@
                   </p>
                 </b-col>
               </b-row>
-              <b-row
-                class="detailFitur"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >
+              <b-row class="detailFitur">
                 <b-col cols="3">
                   <img
                     src="@/assets/logoReimburse.png"
@@ -139,11 +110,7 @@
                   </p>
                 </b-col>
               </b-row>
-              <b-row
-                class="detailFitur"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >
+              <b-row class="detailFitur">
                 <b-col cols="3">
                   <img
                     src="@/assets/logoLaporan.png"
@@ -174,8 +141,13 @@
       <b-row class="sectionContact">
         <b-col cols="12 text-center">
           <h2 class="text-center">Kontak Kami</h2>
-          <!-- <img src="@/assets/map.png" alt="" srcset="" class="mb-4 imgClient" /> -->
-          <div id="map"></div>
+          <div class="mapouter mb-4">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=corner%20stone%20muara%20karang&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://yggtorrent-fr.com">yggtorrent</a><br>
+                <a href="https://google-map-generator.com">map generator</a>
+            </div>
+          </div>
           <p>Ruko Corner Stone</p>
           <p>Jl.Muara Karang No 18 A</p>
           <p>Pluit - Jakarta Utara DKI Jakarta 14450</p>
@@ -307,6 +279,17 @@ a:hover {
 }
 .imgClient {
   width: 100%;
+}
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:500px;width:100%;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:100%;
 }
 @media (max-width: 768px) {
   .textBlue {
