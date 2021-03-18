@@ -3,7 +3,11 @@
     <b-container fluid>
       <b-row>
         <b-col cols="12" md="6" lg="5" class="left-login">
-          <img src="@/assets/LogoSHRPutihGede.png" class="mainLogo" />
+          <img
+            src="@/assets/LogoSHRPutihGede.png"
+            class="mainLogo"
+            @click="$router.go(-1)"
+          />
         </b-col>
         <b-col cols="12" md="6" lg="7" class="right-login">
           <h3>Registration Form</h3>
@@ -68,6 +72,7 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 .right-login {
   padding: 50px 50px;
