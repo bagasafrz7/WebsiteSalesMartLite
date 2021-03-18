@@ -6,7 +6,7 @@
           <b-col cols="12" class="main-bg">
             <b-row>
               <b-col cols="12" lg="6" md="6">
-                <img src="@/assets/logoSales.png" class="mainLogo" />
+                <img src="@/assets/LogoSHRBiruGede.png" class="mainLogo" />
                 <p class="textBlue">Simple.</p>
                 <p class="textBlue">Scalable.</p>
                 <p class="textBlue">Affordable.</p>
@@ -143,9 +143,18 @@
           <h2 class="text-center">Kontak Kami</h2>
           <div class="mapouter mb-4">
             <div class="gmap_canvas">
-                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=corner%20stone%20muara%20karang&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                <a href="https://yggtorrent-fr.com">yggtorrent</a><br>
-                <a href="https://google-map-generator.com">map generator</a>
+              <iframe
+                width="100%"
+                height="100%"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=corner%20stone%20muara%20karang&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+              <a href="https://yggtorrent-fr.com">yggtorrent</a><br />
+              <a href="https://google-map-generator.com">map generator</a>
             </div>
           </div>
           <p>Ruko Corner Stone</p>
@@ -193,7 +202,7 @@ export default {
   padding: 50px;
 }
 .mainLogo {
-  width: 50%;
+  width: 25%;
   margin-bottom: 15%;
 }
 .logoMobile {
@@ -280,16 +289,17 @@ a:hover {
 .imgClient {
   width: 100%;
 }
-.mapouter{
-  position:relative;
-  text-align:right;
-  height:500px;width:100%;
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
 }
 .gmap_canvas {
-  overflow:hidden;
-  background:none!important;
-  height:500px;
-  width:100%;
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .textBlue {

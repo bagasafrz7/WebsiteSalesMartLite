@@ -2,7 +2,9 @@
   <div>
     <b-container fluid>
       <b-row>
-        <b-col cols="12" md="6" lg="5" class="left-login"> </b-col>
+        <b-col cols="12" md="6" lg="5" class="left-login">
+          <img src="@/assets/LogoSHRPutihGede.png" class="mainLogo" />
+        </b-col>
         <b-col cols="12" md="6" lg="7" class="right-login">
           <h3>Registration Form</h3>
           <b-form>
@@ -58,10 +60,18 @@ export default {
   /* background: #1b6fba; */
   background: url('../assets/bgRegister.png');
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
+}
+.mainLogo {
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .right-login {
-  padding: 50px 25px;
+  padding: 50px 50px;
+  margin-bottom: 50px;
 }
 
 .right-login h3 {
@@ -112,5 +122,16 @@ label {
   margin: 50px 0 60px 0;
   text-align: center;
   color: rgb(117, 116, 116);
+}
+
+@media (max-width: 576px) {
+  .left-login {
+    /* display: flex; */
+    padding: 25% 0;
+  }
+  .right-login {
+    padding: 25px 25px;
+    margin-bottom: 5px;
+  }
 }
 </style>
